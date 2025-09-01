@@ -4,13 +4,14 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import markdown as md
 from dotenv import load_dotenv
+from pathlib import Path
 from typhoon_ocr import ocr_document
 
-# โหลดค่า ENV จากไฟล์ .env (ถ้ามี)
-load_dotenv()
+# โหลด .env จากโฟลเดอร์เดียวกับสคริปต์เสมอ
+ENV_PATH = Path(__file__).with_name('.env')
+load_dotenv(dotenv_path=ENV_PATH)
 
-# ------------------------ Utilities ------------------------
-
+# -------------------- helpers --------------------
 def _ensure_obj(result):
     if isinstance(result, dict):
         return result
@@ -22,7 +23,7 @@ def _ensure_obj(result):
 def _norm_space(s: str) -> str:
     if not isinstance(s, str):
         s = str(s)
-    s = s.replace("\u00a0", " ")  # NBSP -> space
+    s = s.replace("\u00a0", " ")
     s = re.sub(r"[ \t]+", " ", s)
     return s.strip()
 
@@ -56,8 +57,7 @@ def _normalize_cols(df: pd.DataFrame):
             mapping[c] = c
     return df.rename(columns=mapping)
 
-# ------------------------ Policy/Card extraction ------------------------
-
+# -------------------- policy/card extraction --------------------
 POLICY_LABELS = [
     r"Policy\s*No\.?", r"Policy\s*Number", r"Policy\s*ID",
     r"เลขที่\s*กรมธรรม์", r"เลขกรมธรรม์", r"กรมธรรม์\s*เลขที่",
@@ -68,19 +68,15 @@ CARD_LABELS = [
     r"เลขที่\s*บัตร", r"หมายเลข\s*บัตร", r"หมายเลขบัตร", r"เลขบัตร"
 ]
 
-# same-line value (label + value on one line)
 def _find_label_value_inline(text: str, label_patterns: List[str]) -> Optional[str]:
     for pat in label_patterns:
-        # อนุญาตเว้นวรรค/ขีด/ทับในค่า (อย่างน้อย 5 ตัวอักษรรวม)
         m = re.search(rf"(?:{pat})\s*[:：]?\s*([A-Za-z0-9][A-Za-z0-9\-\/\s]{{4,}})", text, flags=re.IGNORECASE)
         if m:
             val = _norm_space(m.group(1))
-            # ตัดส่วนเกิน เช่น มีคอลัมน์อื่นติดมา (ช่องว่างต่อเนื่องหลายตัว/แท็บ)
             val = re.split(r"\s{2,}|\t", val)[0].strip()
             return val
     return None
 
-# next-line value (label on one line, value on next non-empty line)
 def _find_label_value_next_line(lines: List[str], label_patterns: List[str]) -> Optional[str]:
     pats = [re.compile(p, re.IGNORECASE) for p in label_patterns]
     for i, line in enumerate(lines):
@@ -99,7 +95,6 @@ def _find_label_value_next_line(lines: List[str], label_patterns: List[str]) -> 
                     return val
     return None
 
-# table value (label/value in table cells; also handle "label: value" in one cell)
 def _find_label_value_in_tables(dfs: List[pd.DataFrame], label_patterns: List[str]) -> Optional[str]:
     pats = [re.compile(p, re.IGNORECASE) for p in label_patterns]
     for df in dfs:
@@ -107,7 +102,7 @@ def _find_label_value_in_tables(dfs: List[pd.DataFrame], label_patterns: List[st
             sdf = df.copy()
             sdf.columns = [_norm_space(c) for c in sdf.columns]
 
-            # 0) label:value อยู่ในเซลล์เดียว
+            # label:value ในเซลล์เดียว
             for i in range(sdf.shape[0]):
                 for j in range(sdf.shape[1]):
                     cell = _norm_space(sdf.iat[i, j])
@@ -122,7 +117,6 @@ def _find_label_value_in_tables(dfs: List[pd.DataFrame], label_patterns: List[st
                             if m:
                                 return _norm_space(m.group(1))
 
-            # 1) ถ้า 2 คอลัมน์ -> ซ้าย=label ขวา=value
             if sdf.shape[1] == 2:
                 for _, r in sdf.iterrows():
                     left = _norm_space(r.iloc[0]); right = _norm_space(r.iloc[1])
@@ -130,7 +124,6 @@ def _find_label_value_in_tables(dfs: List[pd.DataFrame], label_patterns: List[st
                         m = re.search(r"([A-Za-z0-9][A-Za-z0-9\-\/\s]{4,})", right)
                         return _norm_space(m.group(1) if m else right)
 
-            # 2) >2 คอลัมน์ -> next col / next row
             for i in range(sdf.shape[0]):
                 for j in range(sdf.shape[1]):
                     cell = _norm_space(sdf.iat[i, j])
@@ -152,42 +145,58 @@ def _find_label_value_in_tables(dfs: List[pd.DataFrame], label_patterns: List[st
 def _extract_policy_card(natural_text_first_page: str) -> Tuple[str, str]:
     text = _norm_space(natural_text_first_page)
     lines = [_norm_space(x) for x in natural_text_first_page.splitlines()]
-
-    # 1) inline patterns
     pol = _find_label_value_inline(text, POLICY_LABELS) or ""
     card = _find_label_value_inline(text, CARD_LABELS) or ""
-
-    # 2) next-line patterns
     if not pol:
         pol = _find_label_value_next_line(lines, POLICY_LABELS) or pol
     if not card:
         card = _find_label_value_next_line(lines, CARD_LABELS) or card
-
-    # 3) scan tables on first page
     dfs = _tables_from_markdown(natural_text_first_page)
     if not pol:
         pol = _find_label_value_in_tables(dfs, POLICY_LABELS) or pol
     if not card:
         card = _find_label_value_in_tables(dfs, CARD_LABELS) or card
-
     return pol or "", card or ""
 
-# ------------------------ Main extraction ------------------------
+# -------------------- core --------------------
+def _resolve_pdf_path(pdf_arg: str) -> str:
+    """ถ้าไม่พบไฟล์ตามที่ส่งมา จะลองหาใน ./data/ ให้อัตโนมัติ"""
+    if os.path.exists(pdf_arg):
+        return pdf_arg
+    candidate = os.path.join("data", os.path.basename(pdf_arg))
+    if os.path.exists(candidate):
+        return candidate
+    raise FileNotFoundError(f"ไม่พบไฟล์: {pdf_arg} หรือ {candidate}")
 
-def extract_pdf_to_excel(pdf_path: str, out_xlsx: str, base_url: str = None, api_key: str = None):
-    # base_url/api_key: ถ้าไม่ส่งมา ใช้ค่าจาก ENV ที่ load จาก .env แล้ว
+def extract_pdf_to_excel(pdf_path: str, out_path: Optional[str] = None,
+                         base_url: str = None, api_key: str = None):
     base_url = base_url or os.getenv("TYPHOON_BASE_URL") or os.getenv("OPENAI_BASE_URL")
     api_key  = api_key  or os.getenv("TYPHOON_OCR_API_KEY") or os.getenv("OPENAI_API_KEY")
+
+    # input/output
+    pdf_path = _resolve_pdf_path(pdf_path)
+    basename = os.path.splitext(os.path.basename(pdf_path))[0]
+    if out_path is None or out_path.strip() == "":
+        out_dir = "xls"
+        os.makedirs(out_dir, exist_ok=True)
+        out_path = os.path.join(out_dir, f"{basename}.xlsx")
+    else:
+        if out_path.endswith(os.sep) or os.path.isdir(out_path):
+            os.makedirs(out_path, exist_ok=True)
+            out_path = os.path.join(out_path, f"{basename}.xlsx")
+        else:
+            os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
 
     page = 0
     policy, card = "", ""
     rows: List[dict] = []
+    wrote_policy_card = False  # ใส่ Policy/Card แค่ครั้งแรกสุดเท่านั้น
 
     while True:
         try:
             res = ocr_document(
                 pdf_or_image_path=pdf_path,
-                task_type="structure",   # ได้ HTML tables ที่อ่านง่ายด้วย pandas
+                task_type="structure",
                 page_num=page,
                 base_url=base_url,
                 api_key=api_key,
@@ -200,62 +209,57 @@ def extract_pdf_to_excel(pdf_path: str, out_xlsx: str, base_url: str = None, api
         obj = _ensure_obj(res)
         md_text = obj.get("natural_text", "")
 
-        # Debug: เซฟหน้าแรกไว้ตรวจรูปแบบจริง (เปิดคอมเมนต์ได้ถ้าต้องการ)
-        # if page == 0:
-        #     with open("first_page_ocr.md", "w", encoding="utf-8") as f:
-        #         f.write(md_text)
-
         if page == 0:
             policy, card = _extract_policy_card(md_text)
 
+        # ดึงทุกตารางในหน้านี้
         dfs = _tables_from_markdown(md_text)
         for df in dfs:
             df = _normalize_cols(df)
             need = {"No", "Coverage", "Limit", "Balance"}
-            if len(need - set(df.columns)) == 0:
-                if "Member Co-Pay" not in df.columns:
-                    df["Member Co-Pay"] = ""
-                df = df[["No", "Coverage", "Member Co-Pay", "Limit", "Balance"]]
+            if len(need - set(df.columns)) != 0:
+                continue
 
-                def to_int(x):
-                    try:
-                        return int(str(x).strip().split()[0])
-                    except Exception:
-                        return None
-                df["__no__"] = df["No"].map(to_int)
-                sel = df[df["__no__"].notnull()].copy()
-                if not sel.empty:
-                    df = sel
-                df.drop(columns=["__no__"], inplace=True, errors="ignore")
+            if "Member Co-Pay" not in df.columns:
+                df["Member Co-Pay"] = ""
+            df = df[["No", "Coverage", "Member Co-Pay", "Limit", "Balance"]]
 
-                first = True
-                for _, r in df.iterrows():
-                    rows.append({
-                        "Policy No": policy if (page == 0 and first) else "",
-                        "Card No":   card   if (page == 0 and first) else "",
-                        "No": _norm_space(r["No"]),
-                        "Coverage": _norm_space(r["Coverage"]),
-                        "Member Co-Pay": _norm_space(r["Member Co-Pay"]),
-                        "Limit": _norm_space(r["Limit"]),
-                        "Balance": _norm_space(r["Balance"]),
-                    })
-                    first = False
+            # ตัด header ที่ OCR อาจคัดลอกซ้ำทุกหน้า
+            df = df[~df["No"].astype(str).str.contains(r"^no\.?$", case=False, regex=True)]
+
+            # เก็บทุกรอบ (รองรับตารางหลายหน้า) แล้วลบแถวซ้ำตอนท้าย
+            first_row_this_table = True
+            for _, r in df.iterrows():
+                rows.append({
+                    "Policy No": (policy if not wrote_policy_card and first_row_this_table else ""),
+                    "Card No":   (card   if not wrote_policy_card and first_row_this_table else ""),
+                    "No": _norm_space(r["No"]),
+                    "Coverage": _norm_space(r["Coverage"]),
+                    "Member Co-Pay": _norm_space(r["Member Co-Pay"]),
+                    "Limit": _norm_space(r["Limit"]),
+                    "Balance": _norm_space(r["Balance"]),
+                })
+                first_row_this_table = False
+            if not wrote_policy_card and len(rows) > 0:
+                wrote_policy_card = True
 
         page += 1
 
+    # รวมและกันซ้ำ (ถ้ามีหน้าที่ซ้ำเนื้อหา)
     out = pd.DataFrame(rows, columns=["Policy No", "Card No", "No", "Coverage", "Member Co-Pay", "Limit", "Balance"])
     if out.empty:
         raise RuntimeError("ไม่พบตารางผลประโยชน์ (หัวคอลัมน์ No/Coverage/Limit/Balance)")
-    out.to_excel(out_xlsx, index=False)
-    print(f"✅ Saved: {out_xlsx}")
+    out = out.drop_duplicates(subset=["No","Coverage","Member Co-Pay","Limit","Balance"], keep="first").reset_index(drop=True)
+
+    out.to_excel(out_path, index=False)
+    print(f"✅ Saved: {out_path}")
 
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
-    ap.add_argument("--pdf", required=True)
-    ap.add_argument("--out", default="output.xlsx")
-    # base_url/api_key ปล่อยว่างได้ จะดึงจาก .env อัตโนมัติ
+    ap.add_argument("--pdf", required=True, help="ไฟล์ PDF หรือชื่อไฟล์ในโฟลเดอร์ ./data")
+    ap.add_argument("--out", default="", help="พาธไฟล์ .xlsx หรือโฟลเดอร์ (เช่น xls/)")
     ap.add_argument("--base_url", default=os.getenv("TYPHOON_BASE_URL") or os.getenv("OPENAI_BASE_URL"))
-    ap.add_argument("--api_key", default=os.getenv("TYPHOON_OCR_API_KEY") or os.getenv("OPENAI_API_KEY"))
+    ap.add_argument("--api_key",  default=os.getenv("TYPHOON_OCR_API_KEY") or os.getenv("OPENAI_API_KEY"))
     args = ap.parse_args()
     extract_pdf_to_excel(args.pdf, args.out, base_url=args.base_url, api_key=args.api_key)
