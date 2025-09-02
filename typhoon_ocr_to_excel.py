@@ -45,6 +45,19 @@ def _strip_invisibles(s: str) -> str:
            .replace("\u2012", "-").replace("\u2013", "-").replace("\u2014", "-"))
     return s
 
+def _merge_thai_linebreaks(s: str) -> str:
+    """
+    รวมคำไทยที่ถูกตัดด้วยขึ้นบรรทัดใหม่ให้กลับมาติดกัน
+    - ไทย↔ไทย ข้าม \n หรือ \r\n จะติดกัน
+    - ไทย↔อังกฤษ/ตัวเลขยังคงเว้นวรรค
+    """
+    if not s:
+        return s
+    th = r"\u0E00-\u0E7F"
+    # ไทย + (space/newline) + ไทย -> ติดกัน
+    s = re.sub(rf"([{th}])\s*[\r\n]+\s*([{th}])", r"\1\2", s)
+    return s
+
 def _format_th_en_spacing(s: str) -> str:
     """
     จัดช่องว่าง ไทย↔อังกฤษ/ตัวเลข และรอบวงเล็บ/ขีดกลาง/คอมมา
@@ -79,9 +92,44 @@ def _format_th_en_spacing(s: str) -> str:
     s = re.sub(r"[ ]{2,}", " ", s)
     return s.strip()
 
+def _tighten_thai_words(s: str) -> str:
+    """
+    บีบช่องว่าง ‘ภายในวงเล็บ’ และเคสคำไทยที่มักเป็นคำเดี่ยวแต่โดนแยกด้วย space
+    - (ไม่รวม มอเตอร์ไซค์) -> (ไม่รวมมอเตอร์ไซค์)
+    - ต่อ เนื่อง -> ต่อเนื่อง
+    - บีบช่องว่างเฉพาะ ‘ในวงเล็บ’ ระหว่างอักษรไทย
+    """
+    if not s:
+        return s
+    th = r"\u0E00-\u0E7F"
+
+    # บีบคำไทยภายในวงเล็บให้ติดกัน แต่ยังเว้นวรรคไทย↔อังกฤษ/ตัวเลข
+    def _fix_paren(m):
+        inner = m.group(1)
+        inner = re.sub(rf"([{th}])\s+([{th}])", r"\1\2", inner)        # ไทย+ไทย -> ติด
+        inner = re.sub(rf"([{th}])\s+([A-Za-z0-9])", r"\1 \2", inner)  # ไทย↔EN/เลข -> 1 space
+        inner = re.sub(rf"([A-Za-z0-9])\s+([{th}])", r"\1 \2", inner)
+        inner = re.sub(r"[ ]{2,}", " ", inner)
+        return f"({inner.strip()})"
+
+    s = re.sub(r"\(\s*(.*?)\s*\)", _fix_paren, s)
+
+    # ‘ไม่รวม’ + ไทย -> ติดกัน (ไม่รวมมอเตอร์ไซค์)
+    s = re.sub(rf"(ไม่รวม)\s+([{th}])", r"\1\2", s)
+
+    # คำเดี่ยวที่มักโดนแยก
+    s = re.sub(r"ต่อ\s+เนื่อง", "ต่อเนื่อง", s)
+
+    return s
+
 def _thai_norm(s: str) -> str:
     """normalize เบา ๆ ก่อน matching"""
-    return _format_th_en_spacing(_norm_space(_strip_invisibles(s)))
+    s = _strip_invisibles(s)
+    s = _merge_thai_linebreaks(s)   # รวมคำไทยที่ถูกตัดบรรทัดให้ติดกันก่อน
+    s = _norm_space(s)
+    s = _format_th_en_spacing(s)
+    s = _tighten_thai_words(s)      # บีบช่องว่างในวงเล็บ/คำที่ควรติดกัน
+    return s
 
 def _tables_from_markdown(natural_text: str):
     html = md.markdown(natural_text, extensions=['tables'])
@@ -113,6 +161,18 @@ def _normalize_cols(df: pd.DataFrame):
             mapping[c] = c
     return df.rename(columns=mapping)
 
+# ---- number helpers (thai digits & extraction) ----
+_THAI_DIGITS = str.maketrans("๐๑๒๓๔๕๖๗๘๙", "0123456789")
+
+def _to_arabic_digits(s: str) -> str:
+    if not isinstance(s, str):
+        s = str(s)
+    return s.translate(_THAI_DIGITS)
+
+def _extract_numbers(s: str) -> list[str]:
+    s = _to_arabic_digits(s)
+    return re.findall(r"\d+", s)
+
 # -------------------- template matching --------------------
 def _load_templates(path: Optional[str]) -> List[str]:
     if not path:
@@ -139,16 +199,35 @@ def _load_templates(path: Optional[str]) -> List[str]:
             templates.append(t)
     return templates
 
-def _match_template(text: str, templates: List[str], threshold: int = 88) -> Tuple[str, float, bool]:
-    """คืน (ข้อความที่เลือก, คะแนน, matched?) ถ้าคะแนนถึง threshold จะคืนข้อความจาก template (ฟอร์แมตเป๊ะ)"""
+def _match_template(
+    text: str,
+    templates: List[str],
+    threshold: int = 88,
+    enforce_number_match: bool = True
+) -> Tuple[str, float, bool]:
+    """
+    คืน (ข้อความที่เลือก, คะแนน, matched?)
+    - ถ้าคะแนนถึง threshold และ enforce_number_match=True:
+        * ตรวจตัวเลขใน raw กับ best_template ต้อง "เท่ากัน" (หลังแปลงเลขไทย->อารบิก)
+        * ถ้าเลขต่างกัน -> บังคับไม่ match (คืน raw)
+    """
     raw = _thai_norm(text)
     if not raw or not templates:
         return raw, 0.0, False
+
     best = process.extractOne(raw, templates, scorer=fuzz.token_sort_ratio)
     if not best:
         return raw, 0.0, False
+
     best_text, score, _ = best
     matched = score >= threshold
+
+    if matched and enforce_number_match:
+        nums_raw = set(_extract_numbers(raw))
+        nums_tpl = set(_extract_numbers(best_text))
+        if nums_raw and nums_tpl and nums_raw != nums_tpl:
+            return raw, float(score), False
+
     return (best_text if matched else raw), float(score), matched
 
 # -------------------- Policy/Card extraction (หน้าแรกเท่านั้น) --------------------
@@ -294,7 +373,8 @@ def _filter_no_sequence(df: pd.DataFrame) -> pd.DataFrame:
 def extract_pdf_to_excel(pdf_path: str, out_path: Optional[str] = None,
                          base_url: str = None, api_key: str = None,
                          templates_path: Optional[str] = "template/master-data-wording.txt",
-                         sim_threshold: int = 88):
+                         sim_threshold: int = 88,
+                         enforce_number_match: bool = True):
     base_url = base_url or os.getenv("TYPHOON_BASE_URL") or os.getenv("OPENAI_BASE_URL")
     api_key  = api_key  or os.getenv("TYPHOON_OCR_API_KEY") or os.getenv("OPENAI_API_KEY")
 
@@ -355,9 +435,10 @@ def extract_pdf_to_excel(pdf_path: str, out_path: Optional[str] = None,
 
             first_row_this_table = True
             for _, r in df.iterrows():
-                # รวมบรรทัด/จัดวรรคใน cell ก่อน matching
                 cov_raw = _thai_norm(str(r["Coverage"]))
-                cov_best, score, matched = _match_template(cov_raw, templates, threshold=sim_threshold)
+                cov_best, score, matched = _match_template(
+                    cov_raw, templates, threshold=sim_threshold, enforce_number_match=enforce_number_match
+                )
 
                 rows.append({
                     "Policy No": (policy if not wrote_policy_card and first_row_this_table else ""),
@@ -398,7 +479,12 @@ if __name__ == "__main__":
     ap.add_argument("--base_url", default=os.getenv("TYPHOON_BASE_URL") or os.getenv("OPENAI_BASE_URL"))
     ap.add_argument("--api_key",  default=os.getenv("TYPHOON_OCR_API_KEY") or os.getenv("OPENAI_API_KEY"))
     ap.add_argument("--templates", default="template/master-data-wording.txt", help="ไฟล์ master wording")
-    ap.add_argument("--sim", type=int, default=70, help="เกณฑ์ fuzzy match (0-100)")
+    ap.add_argument("--sim", type=int, default=80, help="เกณฑ์ fuzzy match (0-100)")
+    ap.add_argument(
+        "--no_strict_numbers",
+        action="store_true",
+        help="ปิดการตรวจเลขในข้อความ (ค่าเริ่มต้น: ตรวจเลขให้ตรงกัน)"
+    )
     args = ap.parse_args()
 
     extract_pdf_to_excel(
@@ -407,5 +493,6 @@ if __name__ == "__main__":
         base_url=args.base_url,
         api_key=args.api_key,
         templates_path=args.templates,
-        sim_threshold=args.sim
+        sim_threshold=args.sim,
+        enforce_number_match=not args.no_strict_numbers
     )
