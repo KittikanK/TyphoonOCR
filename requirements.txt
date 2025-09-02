@@ -5,3 +5,5 @@ beautifulsoup4>=4.12.2
 lxml>=4.9.3
 Markdown>=3.4.4
 python-dotenv>=1.0.0
+rapidfuzz>=3.9.0
+
