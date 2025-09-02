@@ -35,14 +35,23 @@ def _clean_html(text: str) -> str:
     """strip simple HTML tags that might leak from OCR (e.g., <td>xxx</td>)"""
     return re.sub(r"<[^>]+>", " ", text or "")
 
+def _strip_invisibles(s: str) -> str:
+    """remove zero-width / BOM / normalize weird dashes"""
+    if not s:
+        return s
+    s = s.replace("\u200b", "").replace("\ufeff", "").replace("\u00a0", " ")
+    # normalize various dashes to hyphen-minus
+    s = (s.replace("\u2010", "-").replace("\u2011", "-")
+           .replace("\u2012", "-").replace("\u2013", "-").replace("\u2014", "-"))
+    return s
+
 def _format_th_en_spacing(s: str) -> str:
     """
-    จัดช่องว่าง ไทย↔อังกฤษ/ตัวเลข และรอบวงเล็บ/ขีดกลาง
-    - ใส่ space ก่อน "(" ถ้าติดกับอักษร
-    - ใส่ space หลัง ")" ถ้าติดกับอักษร
-    - ใส่ space ทั้งสองข้างของ " - "
-    - แยกไทยกับอังกฤษ/ตัวเลขให้อ่านง่าย
-    - normalize comma
+    จัดช่องว่าง ไทย↔อังกฤษ/ตัวเลข และรอบวงเล็บ/ขีดกลาง/คอมมา
+    - space ก่อน "(" และหลัง ")"
+    - normalize " - " (ขีดกลางมีช่องว่างสองข้าง)
+    - แยกไทยกับอังกฤษ/ตัวเลข
+    - normalize comma และคอมมาก่อนปิดวงเล็บ
     """
     if not s:
         return s
@@ -61,7 +70,7 @@ def _format_th_en_spacing(s: str) -> str:
     s = re.sub(rf"([{th}])([{latnum}])", r"\1 \2", s)
     s = re.sub(rf"([{latnum}])([{th}])", r"\1 \2", s)
 
-    # normalize commas: collapse spaces around, trim trailing commas
+    # normalize commas
     s = re.sub(r"\s*,\s*", ", ", s)
     s = re.sub(r",\s*\)", ")", s)
     s = re.sub(r",\s*$", "", s)
@@ -71,12 +80,8 @@ def _format_th_en_spacing(s: str) -> str:
     return s.strip()
 
 def _thai_norm(s: str) -> str:
-    """
-    normalize เบา ๆ ก่อน matching:
-    - รวมบรรทัด
-    - จัดช่องว่าง ไทย↔อังกฤษ/วงเล็บ/ขีด/คอมม่า
-    """
-    return _format_th_en_spacing(_norm_space(s))
+    """normalize เบา ๆ ก่อน matching"""
+    return _format_th_en_spacing(_norm_space(_strip_invisibles(s)))
 
 def _tables_from_markdown(natural_text: str):
     html = md.markdown(natural_text, extensions=['tables'])
@@ -135,10 +140,7 @@ def _load_templates(path: Optional[str]) -> List[str]:
     return templates
 
 def _match_template(text: str, templates: List[str], threshold: int = 88) -> Tuple[str, float, bool]:
-    """
-    คืน (ข้อความที่เลือก, คะแนน, matched?)
-    - ลด threshold เป็น 88 เพื่อช่วยกรณี OCR เพี้ยน เช่น 'เวชภัณฑ์' -> 'วเชกกันท์'
-    """
+    """คืน (ข้อความที่เลือก, คะแนน, matched?) ถ้าคะแนนถึง threshold จะคืนข้อความจาก template (ฟอร์แมตเป๊ะ)"""
     raw = _thai_norm(text)
     if not raw or not templates:
         return raw, 0.0, False
@@ -147,10 +149,9 @@ def _match_template(text: str, templates: List[str], threshold: int = 88) -> Tup
         return raw, 0.0, False
     best_text, score, _ = best
     matched = score >= threshold
-    # ถ้า match แล้ว ให้คืนข้อความ "ตาม template" เพื่อให้รูปแบบเว้นวรรค/วงเล็บถูกต้อง 100%
     return (best_text if matched else raw), float(score), matched
 
-# -------------------- Policy/Card extraction --------------------
+# -------------------- Policy/Card extraction (หน้าแรกเท่านั้น) --------------------
 POLICY_LABELS = [
     r"Policy\s*No\.?", r"Policy\s*Number", r"Policy\s*ID",
     r"เลขที่\s*กรมธรรม์", r"เลขกรมธรรม์", r"กรมธรรม์\s*เลขที่",
@@ -160,41 +161,93 @@ CARD_LABELS = [
     r"Card\s*No\.?", r"Card\s*Number",
     r"เลขที่\s*บัตร", r"หมายเลข\s*บัตร", r"หมายเลขบัตร", r"เลขบัตร"
 ]
-POLICY_VALUE = r"[A-Z0-9\-]{5,}(?:_[0-9]+)?"       # e.g. IHA4001YC_13 or 14048-108-240005162
-CARD_VALUE   = r"\d{5}-\d{3}-\d{9}"                # 14048-108-240005162
+
+# Card: ปกติและหลวม (ยอมคั่นแปลก ๆ/ไม่มีคั่น)
+CARD_VALUE_STRICT = r"\d{5}-\d{3}-\d{9}"              # 14048-108-240005162
+CARD_VALUE_LOOSE  = r"(\d{5})[^\d]{0,3}(\d{3})[^\d]{0,3}(\d{9})"
+
+# Policy: ตัวอักษร/ตัวเลข/ขีด + optional _digits  e.g., IHA4001YC_13 หรือ 14048-108-240005162
+POLICY_VALUE = r"[A-Z0-9\-]{5,}(?:_[0-9]+)?"
 
 def _find_first(pattern: str, text: str) -> Optional[str]:
     m = re.search(pattern, text, flags=re.IGNORECASE)
     return m.group(1) if m else None
 
+def _normalize_ocr_block(s: str) -> str:
+    return _norm_space(_clean_html(_strip_invisibles(s)))
+
 def _extract_policy_card(natural_text_first_page: str) -> Tuple[str, str]:
-    text = _clean_html(_norm_space(natural_text_first_page))
+    """
+    ดึง Policy/Card จาก 'หน้าแรกเท่านั้น' ให้เสถียร:
+    1) หาแบบ label: strict
+    2) label: loose (เฉพาะ Card)
+    3) next-line strict/loose (ภายใน 3 บรรทัด)
+    4) สแกนทั้งหน้าแบบ loose
+    5) หาในตารางของหน้าแรกแบบ loose
+    """
+    text = _normalize_ocr_block(natural_text_first_page)
 
+    # ---- Policy ----
     pol = _find_first(rf"(?:{'|'.join(POLICY_LABELS)})\s*[:：]?\s*({POLICY_VALUE})", text)
-    card = _find_first(rf"(?:{'|'.join(CARD_LABELS)})\s*[:：]?\s*({CARD_VALUE})", text)
-
-    # next-line fallback
-    if not pol or not card:
-        lines = [ _norm_space(_clean_html(x)) for x in natural_text_first_page.splitlines() ]
-        for i,l in enumerate(lines):
-            if not pol and re.search(rf"(?:{'|'.join(POLICY_LABELS)})", l, flags=re.IGNORECASE):
+    if not pol:
+        lines = [_normalize_ocr_block(x) for x in natural_text_first_page.splitlines()]
+        for i, l in enumerate(lines):
+            if re.search(rf"(?:{'|'.join(POLICY_LABELS)})", l, flags=re.IGNORECASE):
                 for j in range(i+1, min(i+4, len(lines))):
                     v = _find_first(rf"({POLICY_VALUE})", lines[j])
-                    if v: pol=v; break
-            if not card and re.search(rf"(?:{'|'.join(CARD_LABELS)})", l, flags=re.IGNORECASE):
+                    if v:
+                        pol = v
+                        break
+            if pol:
+                break
+    pol = (pol or "").strip()
+
+    # ---- Card (หน้าแรกเท่านั้น, robust) ----
+    # 1) label + strict
+    card = _find_first(rf"(?:{'|'.join(CARD_LABELS)})\s*[:：]?\s*({CARD_VALUE_STRICT})", text)
+
+    # 2) label + loose
+    if not card:
+        m = re.search(rf"(?:{'|'.join(CARD_LABELS)})\s*[:：]?\s*{CARD_VALUE_LOOSE}", text, flags=re.IGNORECASE)
+        if m:
+            card = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+
+    # 3) next-line strict/loose
+    if not card:
+        lines = [_normalize_ocr_block(x) for x in natural_text_first_page.splitlines()]
+        for i, l in enumerate(lines):
+            if re.search(rf"(?:{'|'.join(CARD_LABELS)})", l, flags=re.IGNORECASE):
                 for j in range(i+1, min(i+4, len(lines))):
-                    v = _find_first(rf"({CARD_VALUE})", lines[j])
-                    if v: card=v; break
-            if pol and card:
+                    v = _find_first(rf"({CARD_VALUE_STRICT})", lines[j])
+                    if v:
+                        card = v
+                        break
+                    m = re.search(CARD_VALUE_LOOSE, lines[j])
+                    if m:
+                        card = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+                        break
+            if card:
                 break
 
-    # ultimate fallback for Card: หา pattern ทั่วทั้งหน้าแรก
+    # 4) สแกนทั้งหน้าแบบ loose
     if not card:
-        any_card = re.search(CARD_VALUE, text)
-        if any_card:
-            card = any_card.group(0)
+        m = re.search(CARD_VALUE_LOOSE, text)
+        if m:
+            card = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
 
-    return (pol or "").strip(), (card or "").strip()
+    # 5) หาในตาราง (หน้าแรก)
+    if not card:
+        for df in _tables_from_markdown(natural_text_first_page):
+            for val in df.astype(str).values.flatten():
+                valc = _normalize_ocr_block(val)
+                m = re.search(CARD_VALUE_LOOSE, valc)
+                if m:
+                    card = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+                    break
+            if card:
+                break
+
+    return pol, (card or "").strip()
 
 # -------------------- core helpers --------------------
 def _resolve_pdf_path(pdf_arg: str) -> str:
@@ -284,6 +337,7 @@ def extract_pdf_to_excel(pdf_path: str, out_path: Optional[str] = None,
 
         if page == 0:
             policy, card = _extract_policy_card(md_text)
+        # หน้าถัด ๆ ไปไม่ยุ่งกับ policy/card อีก (ป้องกันถูกทับ)
 
         for df in _tables_from_markdown(md_text):
             df = _normalize_cols(df)
