@@ -1,0 +1,228 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: นางนุช ประวิดรางศ์</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>: 31101002274065</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA1801Y_13</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: PLAN 2-PLAN 2</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/08/2025</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Company</th>
+<th>TIP Take Care</th>
+</tr>
+<tr>
+<td>Citizen ID</td>
+<td>:</td>
+<td></td>
+</tr>
+<tr>
+<td>Staff No</td>
+<td>:</td>
+<td></td>
+</tr>
+<tr>
+<td>Card No</td>
+<td>: 14048-169-250050493</td>
+<td></td>
+</tr>
+<tr>
+<td>Period</td>
+<td>: 14/08/2025 To 13/08/2026</td>
+<td></td>
+</tr>
+</table>
+## New Health Standard : กรณีระบบที่ไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเต็มของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าห้องผู้ป่วยปกติ ค่าอาหาร และค่าบริการในโรง พยาบาล - ห้องเดี่ยวมาตรฐาน</td>
+<td></td>
+<td>2,500.00 Per Day / 365 Day Per Disability</td>
+<td>600,000.00 Per Year</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าห้องผู้ป่วย ICU ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>5,000.00 Per Day / 365 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าบริการทางการแพทย์เพื่อการบำบัดรักษา คำบริการ โลหิตและส่วนประกอบของโลหิต และค่าบริการทางการ พยาบาล</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด และค่าเวชภัณฑ์</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่ายา ค่าวัคซีนที่สิ้นเปลือง (เวชภัณฑ์ 1) สำหรับกลับ บ้าน</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่าแพทย์ตรวจรักษา</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าติดและหัตถการ</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>ค่าวิสัญญีแพทย์</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าติดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ค่ายาแพทย์ผ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ค่าวิสัญญีแพทย์ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>ค่าผ่าตัดใหญ่ (Day Surgery)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัยก่อนและ หลังจากการรักษาเป็นผู้ป่วยใน</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>ค่ารักษาพยาบาลผู้ป่วยนอกหลังจากการรักษาเป็นผู้ป่วย ใน (ไม่รวมค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>อุบัติเผตุฉุกเฉิน (ER Accident)</td>
+<td></td>
+<td>5,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>ค่าเวชศาสตร์ฟื้นฟู หลังการเข้าพักรักษาตัวเป็นผู้ป่วยใน</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+<figure>**Observation:**
+ภาพนี้แสดงข้อความ "PageNumber: Page 1 of 2" บนพื้นหลังสีเทาอ่อน โดยตัวเลข "1" และ "2" เป็นสีขาว
+
+**Text Recognition:**
+ข้อความที่ปรากฏคือ "PageNumber: Page 1 of 2"
+
+**Final Summary:**
+ภาพนี้แสดงข้อความ "PageNumber: Page 1 of 2" บนพื้นหลังสีเทาอ่อน โดยตัวเลข "1" และ "2" เป็นสีขาว</figure>
+<figure>**Observation:** The image shows a logo.
+**Text Recognition:** The logo contains the letters "TPA" above a white rectangle with the word "THIRD PARTY ADMIN" written on it.
+**Final Summary:** The image is a logo for "TPA Third Party Admin".</figure>
+Date/Time
+: 15/08/2025 15:19:05
+
+Printed By
+: DHPUser33 DHPUser33
