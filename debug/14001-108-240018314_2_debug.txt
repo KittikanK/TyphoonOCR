@@ -1,0 +1,86 @@
+TPA
+# Coverage
+## Member Information
+<table>
+<tr>
+<th colspan="2">Insurer : บริษัท ทีพยประกันภัย จำกัด (มหาชน)</th>
+<th>Company</th>
+<th>: Krungthai Extra Care debit card ( เด็ม PA KT B Shop Smart Blue Diamond Xtra Debit Card)</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>: มะซอเริ ด๊ออริอาแม</td>
+<td>Citizen ID</td>
+<td>: 39405000xxxx</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+<td>Staff No</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: GPA2901Y</td>
+<td>Card No</td>
+<td>: 14001-108-240018314</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: 10000/10000-อุบัติเหตุทั่วไป 10,000 รถจักรยานยนต์ 10,000 /ชุด เชียนอนต่อเนื่องติดต่อกันตั้งแต่ 5 วันขึ้นไป (ไม่รวมมอเตอร์ไซค์)</td>
+<td>Period</td>
+<td>: 04/01/2025 To 03/01/2026</td>
+</tr>
+<tr>
+<td>Visit/Admission Date</td>
+<td>: 15/08/2025</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1,000)</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+### HB : กรณีระบบที่ไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ชดเชย-กรณีอุบัติเหตุทั่วไป (ไม่รวมมอเตอร์ไซค์)-นอนต่อ เนื่องติดต่อกันตั้งแต่ 5 วันขึ้นไป</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+</table>
+#### Conditions
+
+☒
+Telemedicine
+\- ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องค่าส่งยา
+
+☐
+เงื่อนไขและข้อตกลงความคุ้มครอง
+
+\- ไม่คุ้มครอง ค่าจ้างพยาบาลพิเศษ อุปกรณ์ค้ำยันต่างๆ (ยกเว้นไม้ค้ายัน) รถเข็นผู้ป่วย อวัยวะเทียมภายนอกร่างกาย แพทย์ทางเลือก (Alternative medicine)
+การฝังเข็ม
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+** The displayed balances are partial benefits according to at-hospital coverage only. ***
+
+**** No Claim History *****
+
+Created Date : 15/08/2025 13:46:16
+
+Created By : :DHPUser33 DHPIUser33
+
+PageNumber: Page 1 of 1

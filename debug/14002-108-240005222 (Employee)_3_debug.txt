@@ -1,0 +1,75 @@
+TPA
+# Coverage
+## Member Information
+<table>
+<tr>
+<th colspan="2">Insurer : บริษัท ที่พอยประกันภัย จำกัด (มหาชน)</th>
+<th>Company</th>
+<th>: บริษัท พีทีที แท่งซ์ เทอร์มินัล จำกัด</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>: ณัฐวัฒน์ สอนศรี</td>
+<td>Citizen ID</td>
+<td>: 16001005xxxx</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+<td>Staff No</td>
+<td>: 680001-0</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: 14002-108-240005222</td>
+<td>Card No</td>
+<td>: 14002-108-240005222</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: EMPLOYEE-พนักงาน (Auto Major)</td>
+<td>Period</td>
+<td>: 17/02/2025 To 31/12/2025</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/10/2024</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+Maternity Benefits (Ambulance) : กรณีระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของการเกิดเหตุแตละครั้ง
+(If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limits</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าบริการรถพยาบาล (ตลอดบุตร)</td>
+<td></td>
+<td>2,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+</table>
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+\* The displayed balances are partial benefits according to at-hospital coverage only .*
+
+**** No Claim History *****
+
+Created Date
+: 15/08/2025 13:32:29
+
+Created By
+: DHPUser33 DHPUser33

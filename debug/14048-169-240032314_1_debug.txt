@@ -1,0 +1,101 @@
+TPA
+# Coverage
+## Member Information
+<table>
+<tr>
+<td colspan="2">Insurer : บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+<td>Company</td>
+<td>: TIP Take Care</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: นางนุช ประวิตรวงศ์</td>
+<td>Citizen ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>: 31101002274065</td>
+<td>Staff No</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA1801Y_13</td>
+<td>Card No</td>
+<td>: 14048-169-250050493</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: PLAN Z-PLAN 2</td>
+<td>Period</td>
+<td>: 14/08/2025 To 13/08/2026</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/08/2025</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+### Outpatient Benefits : กรุณาระบุแผนการเบิกรับการตรวจสุขภาพของท่าน (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>วัคซีนไข้หวัดใหญ่</td>
+<td></td>
+<td>1,500.00 Per Year</td>
+<td>1,500.00 Per Year</td>
+</tr>
+</table>
+#### Conditions
+
+☒
+IPD & Day care
+\- Room and Board แก้ไขจาก ห้องเตี่ยวมาตรฐาน เป็น คำห้องผู้ป่วยปกติ และค่าอาหาร
+
+☒
+General
+
+\- Pre-existing: ไม่คุ้มครองการบาดเจ็บ หรือเจ็บป่วย (รวมถึงภาวะแทรกซ้อน)ที่เป็นและยังมิได้รักษาให้นายขาดในระหว่าง 5 ปี ก่อนวันทำสัญญามีผลบังคับ
+เป็นครั้งแรก เว้นแต่ผู้เอาประกันได้เอาประกันภัยไว้เป็นระยะเวลา 3 ปี ติดต่อกันแล้ว
+
+☒
+OPD & ER
+
+\- คุ้มครองค่ารักษาพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 24 ชั่วโมงหลังจากการเกิดอุบัติเหตุ อุบัติเหตุ รวมทั้งการรักษาต่อเนื่องที่เกิดขึ้น
+ภายใน 15 วัน หลังจากวันที่รับการรักษาครั้งแรก
+
+\- IPD follow up: ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับการรักษาต่อเนื่องภายใน 30 วันหลังจากออกจากโรงพยาบาล
+
+☒
+Telemedicine
+
+\- ให้ความคุ้มครอง Tele Medicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แม้จะมีคุ้มครองเรื่องค่าส่งยา
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+** The displayed balances are partial benefits according to at-hospital coverage only. ***
+
+**** No Claim History *****
+
+Created Date
+:
+15/08/2025 15:18:58
+
+Created By
+:
+DHPUser33 DHPUser33

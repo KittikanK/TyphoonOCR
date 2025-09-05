@@ -1,0 +1,102 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ที่พยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: วิมลวรรณ สอนศรี</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: 14002-108-240005222</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: DEPENDENT-บิดา-มารดา (Auto Major)</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/10/2024</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Company</th>
+<th>: บริษัท พีทีที แท่งซ์ เทอร์มินัล จำกัด</th>
+</tr>
+<tr>
+<td>Citizen ID</td>
+<td></td>
+<td>: 32512000xxxx</td>
+</tr>
+<tr>
+<td>Staff No</td>
+<td></td>
+<td>: 680001-9</td>
+</tr>
+<tr>
+<td>Card No</td>
+<td></td>
+<td>: 14002-108-240005222</td>
+</tr>
+<tr>
+<td>Period</td>
+<td></td>
+<td>: 17/02/2025 To 31/12/2025</td>
+</tr>
+</table>
+## Outpatient Benefits : กรุณาระบบไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของรายการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limited</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ผู้ป่วยนอก</td>
+<td></td>
+<td>24,000.00 Per Year</td>
+<td>24,000.00 Per Year</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ทันตกรรม</td>
+<td></td>
+<td>24,000.00 Per Year</td>
+<td></td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 24,000.00 Per Year
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+** The displayed balances are partial benefits according to at-hospital coverage only. ***
+
+**** No Claim History *****
+
+Created Date
+:
+15/08/2025 13:28:47
+
+Created By
+:
+DHPUser33 DHPUser33

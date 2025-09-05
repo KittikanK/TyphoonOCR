@@ -1,0 +1,91 @@
+TPA
+# Coverage
+## Member Information
+<table>
+<tr>
+<th colspan="2">Insurer : บริษัท ทีพยประกันภัย จำกัด (มหาชน)</th>
+<th>Company</th>
+<th>: Krungthai Extra Care debit card ( เด็ม PA KT B Shop Smart Blue Diamond Xtra Debit Card)</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>: สุวรีย บุญเลิศ</td>
+<td>Citizen ID</td>
+<td>: 34309000xxxx</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+<td>Staff No</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: GPA2901Y</td>
+<td>Card No</td>
+<td>: 14001-108-240018314</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: 10000/10000-อุบัติเหตุทั่วไป 10,000 รถจักรยานยนต์ 10,000 /ชุด เช่นนอนต่อเนื่องติดต่อกันตั้งแต่ 5 วันขึ้นไป (ไม่รวมออเดอร์ไชด์)</td>
+<td>Period</td>
+<td>: 14/01/2025 To 13/01/2026</td>
+</tr>
+<tr>
+<td>Visit/Admission Date</td>
+<td>: 15/08/2025</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+PA Benefits : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของอาการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่ารักษาพยาบาลจากอุบัติเหตุทั่วไป (ไม่รวม มอเตอร์ไซด์)</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่ารักษาพยาบาลจากอุบัติเหตุมอเตอร์ไซด์</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+</table>
+### Conditions
+
+☒
+Telemedicine
+\- ให้ความคุ้มครอง Tele Medicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องศาส่งยา
+
+☒
+เงื่อนไขและข้อตกลงความคุ้มครอง
+
+\- ไม่คุ้มครอง ค่าจ้างพยาบาลพิเศษ อุปกรณ์ต่างๆ (ยกเว้นไม่ค้ายัน) รถเข็นผู้ป่วย อวัยวะเทียมภายนอกร่างกาย แพทย์ทางเลือก (Alternative medicine)
+การฝังเข็ม
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+** The displayed balances are partial benefits according to at-hospital coverage only. ***
+
+**** No Claim History *****
+
+Created Date : 15/08/2025 14:12:51
+
+Created By : DHPUser33 DHPIUser33

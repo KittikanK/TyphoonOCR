@@ -6,11 +6,11 @@ TPA
 </tr>
 <tr>
 <td>Insurer</td>
-<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+<td>: บริษัท ทีพีเอประกันภัย จำกัด (มหาชน)</td>
 </tr>
 <tr>
 <td>Name</td>
-<td>: นางนุช ประวิดรางศ์</td>
+<td>: นางนุช ประวิตรางศ์</td>
 </tr>
 <tr>
 <td>Other ID</td>
@@ -211,18 +211,77 @@ TPA
 </tr>
 </table>
 <figure>**Observation:**
-ภาพนี้แสดงข้อความ "PageNumber: Page 1 of 2" บนพื้นหลังสีเทาอ่อน โดยตัวเลข "1" และ "2" เป็นสีขาว
+ภาพนี้แสดงข้อความ "TPA" เป็นตัวอักษรสีน้ำเงินขนาดใหญ่ โดยมีข้อความ "THIRD PARTY ADMIN" อยู่ด้านล่างในกรอบสีขาวพร้อมเส้นแนวนอนสามเส้น
 
 **Text Recognition:**
-ข้อความที่ปรากฏคือ "PageNumber: Page 1 of 2"
+*   TPA
+*   THIRD PARTY ADMIN
 
 **Final Summary:**
-ภาพนี้แสดงข้อความ "PageNumber: Page 1 of 2" บนพื้นหลังสีเทาอ่อน โดยตัวเลข "1" และ "2" เป็นสีขาว</figure>
-<figure>**Observation:** The image shows a logo.
-**Text Recognition:** The logo contains the letters "TPA" above a white rectangle with the word "THIRD PARTY ADMIN" written on it.
-**Final Summary:** The image is a logo for "TPA Third Party Admin".</figure>
-Date/Time
-: 15/08/2025 15:19:05
+ภาพนี้แสดงโลโก้หรือชื่อองค์กรที่มีตัวอักษร "TPA" สีน้ำเงินขนาดใหญ่อยู่เหนือข้อความ "THIRD PARTY ADMIN" ที่อยู่ในกรอบสีขาวพร้อมเส้นแนวนอนสามเส้น</figure>
+PageNumber: Page 1 of 2
 
-Printed By
-: DHPUser33 DHPUser33
+New Health Standard : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเต็มของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>21</td>
+<td>ค่าบริการทางการแพทย์เพื่อสังคมโดยผ่านทางเส้นเลือด</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>ค่าบริการทางการแพทย์ โดยรังสีรักษา เวชศาสตร์ นิวคลีียร์</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>ค่าบริการทางการแพทย์ โดยเคมีบำบัด</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>ค่ารักษาพยาบาล โดยการผ่าตัดเล็ก (Minor Surgery)</td>
+<td></td>
+<td>120,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 365 Day Per Disability
+
+2\. Max limit (1) + (2) + (3) + (4) + (5) + (6) + (7) + (8) + (9) + (10) + (11) + (12) + (13) + (14) + (15) + (16) + (17) + (18) + (19) + (20) + (21) + (22) + (23) + (24) + (25) = 120,000.00
+Per Disability
+
+3\. Max limit [New Health Standard] = 600,000.00 Per Year
+# Conditions
+
+☒
+IPD &amp; Day case
+\- Room and Board แก้อาหารและเครื่องดื่ม

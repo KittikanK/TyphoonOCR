@@ -1,0 +1,249 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: วิมลวรรณ สอนศรี</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: 14002-108-240005222</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: DEPENDENT-บิดา-มารดา (Auto Major)</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/10/2024</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+Company
+
+: บริษัท พีทีที แท่งซ์ เทอร์มินัล จำกัด
+
+Citizen ID
+
+: 32512000xxxx
+
+Staff No
+
+: 680001-9
+
+Card No
+
+: 14002-108-240005222
+
+Period
+
+: 17/02/2025 To 31/12/2025
+## Inpatient Benefits : กรณีระบบนี้แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของรายการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าห้องผู้ป่วยปกติ และค่าอาหาร</td>
+<td></td>
+<td>3,000.00 Per Day / 365 Day Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าห้องผู้ป่วย ICU และค่าอาหาร</td>
+<td></td>
+<td>5,000.00 Per Day / 15 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่ารักษาพยาบาลทั่วไป</td>
+<td></td>
+<td>40,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td></td>
+<td>2,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่ายาผู้ป่วยกลับบ้าน</td>
+<td></td>
+<td>40,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่าแพทย์ฝ่ายจิตและหัตถการ</td>
+<td></td>
+<td>30,000.00 Per Disability (Schedule)</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่าแพทย์เยี่ยมไข้</td>
+<td></td>
+<td>1,500.00 Per Day / 365 Day Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>8</td>
+<td>อุบัติเหตุฉุกเฉิน (ER Accident)</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีผ่าตัด</td>
+<td></td>
+<td>2,500.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>10</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีไม่ผ่าตัด</td>
+<td></td>
+<td>2,500.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 365 Day Per Disability
+2\. Max limit (3) + (4) + (5) = 40,000.00 Per Disability
+### Inpatient Benefits(\Major Medical) : กรณีระบบนี้แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim
+
+history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Injured Co-pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่ารักษาพยาบาลทั่วไป</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่ายาผู้ป่วยกลับบ้าน</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าแพทย์ฝ่ายจิตและหัตถการ</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่าแพทย์เยี่ยมไข้</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีผ่าตัด</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีไม่ผ่าตัด</td>
+<td>20%</td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+
+Remark : 1. Max limit (1) + (2) + (3) + (4) + (5) + (6) + (7) = 200,000.00 Per Disability
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+" The displayed balances are partial benefits according to at-hospital coverage only."
+
+PageNumber: Page 2 of 2
+
+<table>
+<tr>
+<th colspan="8">Claim History : แสดงประวัติเต็มย้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Inpatient Benefits</td>
+<td>25/06/2025</td>
+<td>25/06/2025</td>
+<td>C20250980349</td>
+<td>29,200.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Inpatient Benefits</td>
+<td></td>
+<td>08/08/2025</td>
+<td>C20251230209</td>
+<td>0.00</td>
+<td>Authorized</td>
+</tr>
+<tr>
+<td colspan="5">Total by patient :</td>
+<td>29,200.00</td>
+<td></td>
+</tr>
+</table>
+Created Date :
+15/08/2025 13:29:34
+
+Created By :
+DHPUser33 DHPUser33

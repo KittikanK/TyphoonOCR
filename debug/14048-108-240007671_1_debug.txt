@@ -1,0 +1,137 @@
+TPA
+# Coverage
+## Member Information
+<table>
+<tr>
+<td colspan="2">Insurer : บริษัท ที่พยประกันภัย จำกัด (มหาชน)</td>
+<td>Company</td>
+<td>: HA สงกรน้อมทรัพย์ ในเครือปตท</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: พนิดา อดุลกิตติพร</td>
+<td>Citizen ID</td>
+<td>: 31016006XXXX</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+<td>Staff No</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA1901Y_13</td>
+<td>Card No</td>
+<td>: 14048-108-240007671</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: 3 บิดามารดา 75ปี-3 บิดามารดา 75ปี</td>
+<td>Period</td>
+<td>: 03/12/2024 To 02/12/2025</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/10/2024</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+### Outpatient Benefits : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลื่อนของรายการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ผู้ป่วยนอก</td>
+<td></td>
+<td>1,000.00 Per Visit / 1 Visit Per Day</td>
+<td>29.00 Visit Per Year</td>
+</tr>
+</table>
+#### Remark :
+
+1\. Maxlimit (1) = 30 Visit Per Year
+##### Conditions
+
+☒
+General
+\- คุ้มครองสูงสุด 1 กรมธรรม์ต่อคน
+
+\- Pre-existing: ไม่คุ้มครองการบาดเจ็บ หรือเจ็บป่วย (รวมถึงภาวะแทรกซ้อน)ที่เป็นและยังมิได้รักษาให้หายขาดในระหว่าง 5 ปี ก่อนวันทำสัญญามีผลบังคับ
+เป็นครั้งแรก เว้นแต่ผู้เอาประกัน ได้อาประกันภัยไว้เป็นระยะเวลา 3 ปี ติดต่อกันแล้ว
+
+☒
+OPD & ER
+
+\- ข้อตกลงความคุ้มครองผู้ป่วยใน ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับการรักษาต่อเนื่องภายใน 30 วันหลังจากออกจากโรงพยาบาล หรือ
+สถานพยาบาลเวชกรรม
+
+\- ER: คุ้มครองค่าวัคซีนพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 24 ชั่วโมงหลังจากการเกิดอุบัติเหตุรวมทั้งการรักษาต่อเนื่องที่เกิดขึ้นภายใน
+15 วัน หลังจากวันที่รับการรักษาครั้งแรก
+
+☒
+Telemedicine
+
+\- ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องค่าส่งยา
+
+** ผู้ประกันตนที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+" The displayed balances are partial benefits according to at-hospital coverage only."
+
+PageNumber: Page 2 of 2
+
+<table>
+<tr>
+<th colspan="8">Claim History : แสดงประวัติเคลมอ้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Outpatient Benefits</td>
+<td>02/07/2025</td>
+<td>02/07/2025</td>
+<td>C20251019532-02</td>
+<td>0.00</td>
+<td>Rejected</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>20/07/2025</td>
+<td>C20251115645-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td colspan="5"></td>
+<td>Total by patient :</td>
+<td>1,000.00</td>
+</tr>
+</table>
+Created Date :
+15/08/2025 13:35:52
+
+Created By :
+DHPUser33

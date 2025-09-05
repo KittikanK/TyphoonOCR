@@ -1,0 +1,361 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: นภัทรชัย รุ้งเตโช</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA1501Y_13</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: PLAN 2 Copay 10%-กรุงไทย สุขภาพสุขใจ 2 Manual Copay 10%</td>
+</tr>
+<tr>
+<td>Visit/Admission Date</td>
+<td>: 15/08/2025</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+Company
+
+: กรุงไทย สุขภาพสุขใจ
+
+Citizen ID
+
+: 15099674xxxx
+
+Staff No
+
+:
+
+Card No
+
+: 14048-169-250016182
+
+Period
+
+: 14/02/2025 To 13/02/2026
+## New Health Standard : กรณีระบบที่ไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลื่อนของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าห้องผู้ป่วยปกติ ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>5,000.00 Per Day / 365 Day Per Disability</td>
+<td>120,761.80 Per Year</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าห้องผู้ป่วย ICU ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>10,000.00 Per Day / 365 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าบริการทางการแพทย์เพื่อการบำบัดรักษา ค่าบริการ โลหิตและส่วนประกอบของโลหิต และค่าบริการทางการ พยาบาล</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด และค่าวิชภัณฑ์</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่ายา ค่าวิชภัณฑ์สิ้นเปลือง (เวชภัณฑ์ 1) สำหรับกลับ บ้าน</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่าแพทย์ตรวจรักษา</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การผ่าตัดและหัตถการ</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>ค่าวิสัญญ์แพทย์</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การผ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ค่าวิสัญญ์แพทย์ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>ค่าผ่าตัดใหญ่ (Day Surgery)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัยก่อนและ หลังจากการรักษาเป็นผู้ป่วยไข้</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>ค่ารักษาพยาบาลผู้ป่วยนอกหลังจากการรักษาเป็นผู้ป่วย ใน (ไม่รวมค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>อุบัติเหตุฉุกเฉิน (ER Accident)</td>
+<td></td>
+<td>5,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+<figure>**Observation:**
+ภาพนี้แสดงโลโก้ที่มีตัวอักษรสีขาว "TPA" โดยมีคำว่า "THIRD PARTY ADMIN" อยู่ด้านล่างในบรรทัดเดียวกัน ตัวอักษร "A" มีขนาดใหญ่กว่าคำว่า "THIRD PARTY"
+
+**Text Recognition:**
+*   TPA
+*   THIRD PARTY ADMIN
+
+**Final Summary:**
+ภาพนี้เป็นโลโก้ที่มีตัวอักษร "TPA" ขนาดใหญ่อยู่เหนือคำว่า "THIRD PARTY ADMIN" ซึ่งเขียนด้วยตัวอักษรขนาดเล็กกว่า</figure>
+PageNumber: Page 1 of 3
+
+New Health Standard : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเต็มของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>20</td>
+<td>ค่าเวชศาสตร์ฟื้นฟู หลังการเข้าพักรักษาตัวเป็นผู้ป่วยใน</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>ค่าบริการทางการแพทย์เพื่อล้างโตผ่านทางเส้นเลือด</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>ค่าบริการทางการแพทย์ โดยรังสีรักษา เวชศาสตร์ นิวเคลียร์</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>ค่าบริการทางการแพทย์ โดยเคมีบำบัด</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>ค่ารักษาพยาบาล โดยการผ่าตัดเด็ก (Minor Surgery)</td>
+<td></td>
+<td>50,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 365 Day Per Disability
+
+2\. Max limit (1) + (2) + (3) + (4) + (5) + (6) + (7) + (8) + (9) + (10) + (11) + (12) + (13) + (14) + (15) + (16) + (17) + (18) + (19) + (20) + (21) + (22) + (23) + (24) + (25) = 50,000.00 Per Disability
+
+3\. Max limit [New Health Standard] = 200,000.00 Per Year
+# Conditions
+
+☒
+General
+
+\- Pre-existing: ไม่คุ้มครองการบาดเจ็บ หรือเจ็บป่วย (รวมถึงภาวะแทรกซ้อน)ที่เป็นและยังมิได้รักษาให้หายขาดในระหว่าง 5 ปี ก่อนวันทำสัญญามีผลบังคับ
+เป็นครั้งแรก เว้นแต่ผู้เอาประกัน ได้เอาประกันภัยไว้เป็นระยะเวลา 3 ปี ติดต่อกันแล้ว
+## OPD & ER
+
+\- IPD follow up: ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับการรักษาต่อเนื่องภายใน 30 วันหลังจากออกจากโรงพยาบาล
+
+\- กรมธรรม์ประกันภัยนี้ไม่คุ้มครองการเจ็บป่วยใดๆ ที่เกิดขึ้นในระยะเวลา 30 วัน (Waiting Period) หลังจากที่กรมธรรม์ประกันภัยมีผลบังคับครั้งแรก
+
+\- ER: คุ้มครองค่ารักษาพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 24 ชั่วโมงหลังจากการเกิดอุบัติเหตุชวนทั้งการรักษาต่อเนื่องที่เกิดขึ้นภายใน
+15 วัน หลังจากวันที่รับการรักษาครั้งแรก
+### Telemedicine
+
+\- ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องคำสั่งยา
+
+☐
+เงื่อนไขและข้อยกเว้นความคุ้มครองเฉพาะบุคคล
+
+\- ติด Copayment บริษัทฯจ่าย 90% ผู้เอาประกันภัยจ่าย 10% (Copayment เฉพาะ IPD ไม่รวม หมวดที่ 7 ER)
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น ***
+
+** The displayed balances are partial benefits according to at-hospital coverage only."
+
+PageNumber: Page 3 of 3
+
+<table>
+<tr>
+<th colspan="8">Claim History : แสดงประวัติเคลมอ้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>1</td>
+<td>New Health Standard</td>
+<td>22/02/2025</td>
+<td>22/02/2025</td>
+<td>C20250312896</td>
+<td>22,054.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>2</td>
+<td>New Health Standard</td>
+<td>02/05/2025</td>
+<td>02/05/2025</td>
+<td>C20250668672</td>
+<td>30,367.80</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>3</td>
+<td>New Health Standard</td>
+<td>26/07/2025</td>
+<td>26/07/2025</td>
+<td>C20251153075</td>
+<td>15,424.20</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>4</td>
+<td>New Health Standard</td>
+<td>06/08/2025</td>
+<td>06/08/2025</td>
+<td>C20251209596-02</td>
+<td>11,392.20</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td></td>
+<td>Total by patient :</td>
+<td></td>
+<td></td>
+<td></td>
+<td>79,238.20</td>
+<td></td>
+</tr>
+</table>
+Created Date :
+15/08/2025 13:39:14
+
+Created By :
+DHPUser33 DHPUser33

@@ -1,0 +1,340 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: MIN MIN KYAUNG</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>: 2492009297615</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA7806M_13</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: PLAN 1-แผน 1</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/08/2025</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Company</th>
+<th>: HA แรงงานต่างด้าวถูกกฎหมาย 6 M</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>Citizen ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>Staff No</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>Card No</td>
+<td>: 14048-130-252517023</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>Period</td>
+<td>: 22/02/2025 To 21/08/2025</td>
+</tr>
+</table>
+## New Health Standard : กรณีระบบที่ไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเต็มของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าห้องผู้ป่วยปกติ ค่าอาหาร และค่าบริการในโรง พยาบาล - ห้องเดี่ยวมาตรฐาน</td>
+<td></td>
+<td>150,000.00 Per Disability / 365 Day Per Disability</td>
+<td>104,750.00 Per Year</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าห้องผู้ป่วย ICU ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>150,000.00 Per Disability / 365 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าบริการทางการแพทย์เพื่อการบำบัดรักษา คำบริการ โลหิตและส่วนประกอบของโลหิต และค่าบริการทางการ พยาบาล</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด และค่าเวชภัณฑ์</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่ายา ค่าวัคซีนที่สิ้นเปลือง (เวชภัณฑ์ 1) สำหรับกลับ บ้าน</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่าแพทย์ตรวจรักษา</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าติดและหัตถการ</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>ค่าวิสัญญีแพทย์</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าติดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ค่ายาแพทย์ผ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ค่าวิสัญญีแพทย์ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>ค่าผ่าตัดใหญ่ (Day Surgery)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัยก่อนและ หลังจากการรักษาเป็นผู้ป่วยใน</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>ค่ารักษาพยาบาลผู้ป่วยนอกหลังจากการรักษาเป็นผู้ป่วย ใน (ไม่รวมค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>อุบัติเผตุฉุกเฉิน (ER Accident)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>ค่าเวชศาสตร์ฟื้นฟู หลังการเข้าพักรักษาตัวเป็นผู้ป่วยใน</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+<page_number>Page 1 of 3</page_number>
+
+New Health Standard : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเต็มของการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>21</td>
+<td>ค่าบริการทางการแพทย์เพื่อสังคมโดยผ่านทางเส้นเลือด</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>ค่าบริการทางการแพทย์ โดยรังสิรักษา เวชศาสตร์ นิวคลียร์</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>ค่าบริการทางการแพทย์ โดยเคมีบำบัด</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>ค่ารักษาพยาบาล โดยการผ่าตัดเล็ก (Minor Surgery)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 365 Day Per Disability
+
+2\. Max limit [New Health Standard] = 150,000.00 Per Year
+# Conditions
+
+☒
+Telemedicine
+\- ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 01/11/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องค่าส่งยา
+## General
+
+\- ไม่คุ้มครองโรคเรื้อรัง การบาดเจ็บหรือภาวะเจ็บป่วย (รวมจึงสภาวะแทรกซ้อน) ที่ยังไม่ได้รักษาให้หายก่อนวันที่กรมธรรม์ประกันภัยเริ่มมีผลบังคับ
+
+\- ไม่คุ้มครองการเจ็บป่วยด้วยโรคติดเชื้อไวรัสโคโรนา (Coronavirus (2019-nCoV) ) ที่เกิดขึ้นในระยะเวลา 14 วัน (Waiting Period) หลังจากที่กรมธรรม์ ประกัน
+ภัยมีผลบังคับริ้งแรก
+
+\- สิทธิ์การประกันภัยนี้สำหรับแรงงานต่างด้าวตามโครงการฯ 1 คน ต่อ 1 สิทธิ์ เท่านั้น
+### IPD & Day case
+
+\- Room and Board แก้อไขจาก ห้องเดี่ยวมาตรฐาน เป็น ค่าห้องผู้ป่วยปาติ และค่าอาหาร
+#### OPD & ER
+
+\- ข้อตกลงความคุ้มครองผู้ป่วยใน ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับรักษาต่อเนื่องภายใน 30 วันหลังจากการออกจากโรงพยาบาล หรือ
+สถานพยาบาลเวชกรรม
+
+\- คุ้มครองค่ารักษาพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 24 ชั่วโมงหลังจากการเกิดอุบัติเหตุ อุบัติเหตุ รวมทั้งการรักษาต่อเนื่องที่เกิดขึ้น
+ภายใน 15 วัน หลังจากวันที่รับการรักษาครั้งแรก
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น ***
+
+** The displayed balances are partial benefits according to at-hospital coverage only. **
+
+PageNumber: Page 3 of 3
+
+<table>
+<tr>
+<th colspan="8">Claim History - แสดงประวัติเต็มย้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>1</td>
+<td>New Health Standard</td>
+<td>02/05/2025</td>
+<td>02/05/2025</td>
+<td>C20250669303</td>
+<td>41,754.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>2</td>
+<td>New Health Standard</td>
+<td>02/05/2025</td>
+<td>09/05/2025</td>
+<td>C20250708828</td>
+<td>3,496.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Total by patient :</td>
+<td>45,250.00</td>
+</tr>
+</table>
+Created Date : 15/08/2025 13:42:32
+
+Created By :
+
+DHPUser33 DHPUser33

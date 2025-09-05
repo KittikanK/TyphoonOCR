@@ -1,0 +1,348 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพีเอฟประกันภัย จํากัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: ภัทริฐิรินรินทร์ นาหลวง</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: IHA4001YC_13</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: TIP Platinum Health Care 4C-(Manual Deductible 10,000 บาท Per disability)</td>
+</tr>
+<tr>
+<td>Visit/Admission Date</td>
+<td>: 15/08/2025</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+V.I.P.
+
+VIP-fast track ส่งบริการประกัน ก่อนปฏิเดือนหรือติดปัญหา
+
+(If the balance is not shown, please check from the
+claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ค่าห้องผู้ป่วยปกติ ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>10,000.00 Per Day / 90 Day Per Disability</td>
+<td>4,964,668.30 Per Year</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ค่าห้องผู้ป่วย ICU ค่าอาหาร และค่าบริการในโรง พยาบาล</td>
+<td></td>
+<td>20,000.00 Per Day / 15 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ค่าแพทย์ที่ปรึกษา</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ค่าบริการทางการแพทย์เพื่อการบำบัดรักษา ค่าบริการ โลหิตและส่วนประกอบของโลหิต และค่าบริการทางการ พยาบาล</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ค่ายา ค่าสารอาหารทางหลอดเลือด และค่าวเชกกันท์</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ค่ายา ค่าเวชภัณฑ์สิ้นเปลือง (เวชภัณฑ์ 1 ) สำหรับกลับ บ้าน</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ค่าแพทย์ตรวจรักษา</td>
+<td></td>
+<td>1,500.00 Per Day / 1 Visit Per Day / 90 Day Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ค่าห้องผ้าตัด และค่าห้องทำหัตถการ</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ค่ายา ค่าสาธารณางทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าตัดและหัตถการ</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีผ่าตัด</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ค่าวิสัญญีแพทย์</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ค่าห้องผ่าตัด และค่าห้องทำหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ค่ายา ค่าสาธารณางทางหลอดเลือด ค่าเวชภัณฑ์ และค่า อุปกรณ์การฆ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>ค่าแพทย์ผ่าตัดและหัตถการ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ค่าแพทย์ที่ปรึกษา กรณีผ่าตัด (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>10,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>ค่าวิสัญญีแพทย์ (เปลี่ยนอวัยวะ)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+Date/Time : 15/08/2025 14:14:27
+
+Printed By
+: DHPUser33 DHPUser33
+
+PageNumber: Page 1 of 4
+
+PageNumber: Page 2 of 4
+
+New Health Standard (Manual Deductible) - กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลมของรายการเกิดเหตุแตละครั้ง (If the balance is not shown, please check from the
+claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>19</td>
+<td>ค่าผ่าตัดใหญ่ (Day Surgery)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>ค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัยก่อนและ หลังจากการรักษาเป็นผู้ป่วยไข้</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>ค่ารักษาพยาบาลผู้ป่วยนอกหลังจากการรักษาเป็นผู้ป่วย ใน (ไม่วรวมค่าบริการทางการแพทย์เพื่อการตรวจวินิจฉัย)</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>อุบัติเหตุฉุกเฉิน (ER Accident)</td>
+<td></td>
+<td>40,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>ค่าวชศสตร์ฟื้นผู้ หลังการเข้ารับการต่อเป็นผู้ป่วยไข้</td>
+<td></td>
+<td>150,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>ค่าบริการทางการแพทย์เพื่อสำอางใดผ่านทางเด้นเลือด</td>
+<td></td>
+<td>10,000.00 Per Year</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>ค่าบริการทางการแพทย์ โดยรังสีรักษา เวชศาสตร์ มิโนคลีทร์</td>
+<td></td>
+<td>10,000.00 Per Year</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>ค่าบริการทางการแพทย์ โดยเคมีบำบัด</td>
+<td></td>
+<td>10,000.00 Per Year</td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>ค่าบริการรถพยาบาล</td>
+<td></td>
+<td>4,000.00 Per Disability</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>ค่ารักษาพยาบาล โดยการผ่าตัดเล็ก (Minor Surgery)</td>
+<td></td>
+<td>200,000.00 Per Disability</td>
+<td></td>
+</tr>
+</table>
+
+Remark :
+1\. Max limit (1) + (2) = 90 Day Per Disability
+2\. Max limit (3) + (4) + (5) + (6) + (7) + (20) + (21) + (22) + (23) + (27) = 150,000.00 Per Disability
+3\. Max limit (9) + (10) + (11) + (12) + (13) + (14) + (15) + (16) + (17) + (18) + (19) + (28) = 200,000.00 Per Disability
+4\. Max limit (24) + (25) + (26) = 10,000.00 Per Year
+5\. Max limit [New Health Standard (Manual Deductible)] = 5,000,000.00 Per Year
+# Conditions
+
+☒
+Telemedicine
+\- ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 01/11/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องค่าส่งยา
+## OPD & ER
+
+☐
+\- IPD follow up : ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับการรักษาต่อยื้องภายใน 30 วันหลังจากออกจากโรงพยาบาล
+
+\- ER: คุ้มครองค่ารักษาพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 24 ชั่วโมงหลังจากการเกิดอุบัติเหตุรวมทั้งการรักษาต่อเนื่องที่เกิดขึ้นภายใน
+31 วัน หลังจากวันที่รับการรักษาครั้งแรก
+### ☐ ระยะเวลาที่ไม่คุ้มครอง (Waiting Period)
+
+\- การบรรรอประกันภัยนี้ไม่คุ้มครองการเรียบปรายจากโรคติดเชื้อไวรัสโคโรนา (Coronavirus (2019-nCOv) ที่เกิดขึ้นในระยะเวลา 30 วัน (Waiting Period) หลัง
+จากที่กรรมธรรม์ประกันภัยมีผลบังคับครั้งแรก
+#### General
+
+\- Pre-existing: ไม่คุ้มครองการบาดเจ็บ หรือเจ็บป่วย (รวมถึงภาวะแทรกซ้อน)ที่เป็นและยังมิได้รักษาให้หายขาดในระหว่าง 5 ปี ก่อนวันทำสัญญามีผลบังคับ
+เป็นครั้งแรก เว้นแต่ผู้เอาประกัน ได้เอาประกันภัยไว้เป็นระยะเวลา 3 ปี ติดต่อกันแล้ว
+##### Deductible
+
+\- กรณี IPD Plan2 และ Plan4 ความรับผิดชอบส่วนแรก (Deductible = 10,000 บาท Per Disability) = => จะหักจากค่าใช้จ่ายทั้งก้อนที่ รพ. เรียกเก็บจริง (รวม
+ค่าห้อง ค่าอาหาร ค่าบริการพยาบาล) ** ไม่รวมค่าใช้จ่ายส่วนตัว ค่าใช้จ่ายที่ไม่คุ้มครอง
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น ***
+
+"The displayed balances are partial benefits according to at-hospital coverage only."
+
+PageNumber: Page 4 of 4
+
+<table>
+<tr>
+<th colspan="8">Claim History : แสดงประวัติเฉลี่ย้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td rowspan="2">1</td>
+<td>New Health Standard</td>
+<td>23/07/2025</td>
+<td>23/07/2025</td>
+<td>C20251139475-02</td>
+<td>45,631.70</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>(Manual Deductible)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+<td></td>
+<td>Total by patient :</td>
+<td></td>
+<td>45,631.70</td>
+<td></td>
+</tr>
+</table>
+Created Date :
+15/08/2025 14:14:27
+
+Created By :
+DHPUser33 DHPUser33

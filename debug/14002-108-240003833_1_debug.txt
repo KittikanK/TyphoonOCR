@@ -1,0 +1,277 @@
+TPA
+# Coverage
+<table>
+<tr>
+<th colspan="2">Member Information</th>
+</tr>
+<tr>
+<td>Insurer</td>
+<td>: บริษัท ทีพยประกันภัย จำกัด (มหาชน)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>: สมพรี สมผดุง</td>
+</tr>
+<tr>
+<td>Other ID</td>
+<td>:</td>
+</tr>
+<tr>
+<td>Policy No</td>
+<td>: 14002-108-240003833</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>: PLAN 1-แผนที่ 1</td>
+</tr>
+<tr>
+<td>Visit/Admittion Date</td>
+<td>: 15/08/2025</td>
+</tr>
+<tr>
+<td>Current Currency</td>
+<td>: THB (Exchange Rate: 1.0000)</td>
+</tr>
+</table>
+Company
+
+: สำนักงานคณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ
+
+Citizen ID
+
+: 31022009xxxx
+
+Staff No
+
+:
+
+Card No
+
+: 14002-108-240003833
+
+Period
+
+: 01/10/2024 To 30/09/2025
+
+Outpatient Benefits : กรุณาระบุไม่แสดงวงเงินคงเหลือให้ตรวจสอบจากประวัติเคลื่อนของรายการเกิดเหตุแต่ละครั้ง (If the balance is not shown, please check from the claim history)
+<table>
+<tr>
+<th>No</th>
+<th>Coverage</th>
+<th>Member Co-Pay</th>
+<th>Limit</th>
+<th>Balance</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ผู้ป่วยนอก</td>
+<td></td>
+<td>1,000.00 Per Visit / 1 Visit Per Day</td>
+<td>9.00 Visit Per Year</td>
+</tr>
+</table>
+
+Remark :
+1\. Maxlimit (1) = 25 Visit Per Year
+## Conditions
+
+☒
+IPD & Day case
+\- ยากสับบ้านไม่เกิน 14 วันนับจากวันที่ออกจากโรงพยาบาลหรือสถานเวชกรรม
+
+\- Day case: คุ้มครองการรักษา 21 หัตถการเท่านั้น / Minor surgery ใช้ตามวงเงิน OPD (กรณีมีวงเงิน OPD)
+
+☒
+OPD & ER
+
+\- ER: คุ้มครองค่ารักษาพยาบาล อุบัติเหตุฉุกเฉิน เนื่องจากการบาดเจ็บภายในเวลา 72 ชั่วโมงหลังจากการเกิดอุบัติเหตุรวมทั้งการรักษาต่อเนื่องที่เกิดขึ้นภายใต้
+31 วัน หลังจากวันที่รับการรักษาครั้งแรก
+
+\- IPD follow up: ให้ความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอกสำหรับการรักษาต่อเนื่องภายใน 31 วันหลังจากออกจากโรงพยาบาล
+
+☒
+General
+
+\- Waive Pre-existing : คุ้มครองโรคเรื้อรัง การบาดเจ็บหรือการเจ็บป่วย สำหรับผู้เอาประกันภัยเดิมที่เข้าร่วมในวันเริ่ม 01/10/2024 สำหรับผู้เอาประกันภัย
+ใหม่หรือเข้าระหว่างปีไม่คุ้มครองโรคเรื้อรัง
+
+☒
+Telemedicine
+
+\- Teemed : ให้ความคุ้มครอง TeleMedicine โดยเริ่มตั้งแต่วันที่ 17/04/2020 เป็นต้นไป แต่ไม่คุ้มครองเรื่องคำสั่งยา
+
+** ผลประโยชน์ที่แสดงเป็นเพียงบางส่วนที่สามารถใช้สิทธิ์ที่ รพ. ได้เท่านั้น **
+
+" The displayed balances are partial benefits according to at-hospital coverage only."
+
+PageNumber: Page 2 of 2
+
+<table>
+<tr>
+<th colspan="8">Claim History : แสดงประวัติเต็มย้อนหลัง 365 วัน (Display only 365 days of claim history)</th>
+</tr>
+<tr>
+<th>No</th>
+<th>Main Benefit</th>
+<th>Accident Date</th>
+<th>Admission/ Visit Date</th>
+<th>Claim No.</th>
+<th>Utilization</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>04/10/2024</td>
+<td>C20241395726-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>15/11/2024</td>
+<td>C20241604683-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>21/12/2024</td>
+<td>C20241811112-02</td>
+<td>954.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Outpatient Benefits</td>
+<td>22/12/2024</td>
+<td>22/12/2024</td>
+<td>C20241814848-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>01/03/2025</td>
+<td>C20250335937-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>25/04/2025</td>
+<td>C20250623371-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>09/05/2025</td>
+<td>C20250704399-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>14/05/2025</td>
+<td>C20250731177-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>29/05/2025</td>
+<td>C20250827370-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>05/06/2025</td>
+<td>C20250865629-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>06/06/2025</td>
+<td>C20250870051-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>12/06/2025</td>
+<td>C20250906636-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>18/06/2025</td>
+<td>C20250940487-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>27/06/2025</td>
+<td>C20250991281-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>16/07/2025</td>
+<td>C20251094322-02</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Outpatient Benefits</td>
+<td></td>
+<td>30/07/2025</td>
+<td>C20251169366</td>
+<td>1,000.00</td>
+<td>Approved</td>
+</tr>
+</table>
+Total by patient :
+
+15,954.00
+
+Created Date
+:
+15/08/2025 13:53:30
+
+Created By
+:
+DHPUser33 DHPUser33
